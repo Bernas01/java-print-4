@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações Agrícolas</title>
+    <link rel="stylesheet" href="/css/page.css">
+</head>
+<body>
+    <header>
+        <h1>GrowerTech</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Preencha as informações abaixo para receber uma recomendação</h2>
+            <form id="recommendation-form">
+                <div class="form-group">
+                    <label for="solo">Tipo de Solo:</label>
+                    <input type="text" id="solo" required>
+                </div>
+                <div class="form-group">
+                    <label for="fertilizante">Fertilizante Utilizado:</label>
+                    <input type="text" id="fertilizante" required>
+                </div>
+                <div class="form-group">
+                    <label for="temperatura">Temperatura Média (°C):</label>
+                    <input type="number" id="temperatura" required>
+                </div>
+                <div class="form-group">
+                    <label for="planta">O que você está plantando?</label>
+                    <input type="text" id="planta" required>
+                </div>
+                <button type="submit">Gerar Recomendação</button>
+            </form>
+        </section>
+
+        <section id="result-section" class="result-section hidden">
+            <h2>Sua Recomendação</h2>
+            <div id="user-inputs" class="tweet">
+                <!-- Detalhes do que o usuário preencheu serão exibidos aqui -->
+            </div>
+            <div id="recommendation" class="tweet">
+                <!-- Recomendação será exibida aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
